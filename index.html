@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiation Modeling</title>
+</head>
+<body>
+    <h1>Radiation Modeling</h1>
+    <h1>The equation is \(X = X_0 \text{ } e^{ - (\frac{u_1}{\rho_1} \rho_1 x_1 + \frac{u_2}{\rho_2} \rho_2 x_2 + \ldots + \frac{u_n}{\rho_n} \rho_n x_n) }\)</h1>
+    <h2 id="output"></h2>
+    <label for="xnaught">\( X_0 \):</label>
+    <input type="text" id="xnaught" name="xnaught"><br><br>
+
+    <p>Material 1</p>
+    <label for="frac1">\( \displaystyle \frac{u_1}{\rho_1} \):</label>
+    <input type="text" id="frac1" name="frac1"><br><br>
+
+    <label for="rho1">\( \rho_1 \):</label>
+    <input type="text" id="rho1" name="rho1"><br><br>
+
+    <label for="x1">\( x_1 \):</label>
+    <input type="text" id="x1" name="x1"><br><br>
+
+    <div id="place"></div>
+    <button id="remove">Remove last material</button>
+    <button id="add">Add another material</button>
+    <br>
+    <br>
+    <button id="calculate">Calculate</button>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
